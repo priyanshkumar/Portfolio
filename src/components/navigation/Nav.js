@@ -3,9 +3,9 @@ import "./Nav.css";
 
 function Nav() {
   return (
-    <nav className="navbar d-flex justify-content-around">
+    <nav className="navbar position-fixed w-100 d-flex justify-content-around">
       <div className="mainLogo">
-        <a className="d-flex align-items-center">
+        <a className="d-flex align-items-center" href="/">
           <h4 className="m-2">PR</h4>
         </a>
       </div>

@@ -1,0 +1,8 @@
+.skills-card {
+  box-shadow: 2px 2px 3px #eeeeee, -2px -2px 3px black;
+}
+
+.skills-card img {
+  width: 16rem;
+  height: 9rem;
+}

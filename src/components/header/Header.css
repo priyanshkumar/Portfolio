@@ -1,0 +1,50 @@
+.headerText {
+  height: 100vh;
+}
+
+.text {
+  width: 100%;
+  height: 100vh;
+}
+
+/* styling for text sectiuon */
+.headerText h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 5rem;
+  color: #000000;
+  opacity: 0.9;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    margin-bottom: -20px;
+  }
+  30% {
+    margin-bottom: -20px;
+    letter-spacing: 10px;
+  }
+  85% {
+    margin-bottom: -20px;
+    letter-spacing: 5px;
+  }
+}
+
+.headerText h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+  color: #000000;
+  animation: text2 2s;
+}
+
+@keyframes text2 {
+  0% {
+    letter-spacing: 2px;
+  }
+  55% {
+    letter-spacing: 5px;
+  }
+  85% {
+    letter-spacing: 2px;
+  }
+}

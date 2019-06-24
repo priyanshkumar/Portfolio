@@ -1,0 +1,23 @@
+.about {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 12px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background-color: rgb(140, 67, 255);
+  height: 70vh;
+}
+
+.bio-content {
+  width: 65%;
+}
+
+.bio-content p {
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.bio-content h2 {
+  font-size: 3rem;
+  color: #ffffff;
+}
