@@ -1,8 +1,16 @@
 .skills-card {
-  box-shadow: 2px 2px 3px #eeeeee, -2px -2px 3px black;
+  background-color: #ffffff;
+
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 12px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  width: 20rem;
 }
 
-.skills-card img {
-  width: 16rem;
-  height: 9rem;
+.img-logo {
+  height: 7rem;
+}
+
+.skills-card h2 {
+  width: 60%;
 }

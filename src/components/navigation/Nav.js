@@ -12,16 +12,36 @@ function Nav() {
       <div className="d-flex align-utems -center">
         <ul className="navlinks d-flex m-0">
           <li className="px-2">
-            <a href="#about">ABOUT</a>
+            <a
+              className="d-flex justify-content-center align-items-center"
+              href="#about"
+            >
+              ABOUT
+            </a>
           </li>
           <li className="px-2">
-            <a href="#education">EDUCATION</a>
+            <a
+              className="d-flex justify-content-center align-items-center"
+              href="#skills"
+            >
+              <h3 className="m-0">I</h3>KNOW
+            </a>
           </li>
           <li className="px-2">
-            <a href="#portfolio">PORTFOLIO</a>
+            <a
+              className="d-flex justify-content-center align-items-center"
+              href="#portfolio"
+            >
+              PORTFOLIO
+            </a>
           </li>
           <li className="px-2">
-            <a href="#contact">CONTACT</a>
+            <a
+              className="d-flex justify-content-center align-items-center"
+              href="#contact"
+            >
+              CONTACT
+            </a>
           </li>
         </ul>
       </div>
