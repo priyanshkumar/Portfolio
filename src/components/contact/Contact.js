@@ -6,7 +6,7 @@ function Contact() {
     <section id="contact" class="row m-0 py-5 contact-background">
       <div class="container py-lg-5">
         <div class="row">
-          <div class="col-lg-5 col-sm-12">
+          <div class="col-lg-5 col-sm-12 d-flex flex-column justify-content-center align-items-center">
             <div class="row">
               <div class="col-12">
                 <h2 class="text-center">
@@ -15,7 +15,7 @@ function Contact() {
               </div>
             </div>
             <div class="row">
-              <div class="col-12 d-flex justify-content-center mt-4 my-lg-4">
+              <div class="col-12 d-flex justify-content-center align-items-center mt-4 my-lg-4">
                 <ul class="contact-details text-center p-0">
                   <li>28 Fandor Way</li>
                   <li>Brampton, Canada</li>

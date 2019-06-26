@@ -1,3 +1,12 @@
 .hero {
-    bs
+  margin-top: -23%;
+
+  background: url(./images/hero.png);
+
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  height: 80vh;
 }
