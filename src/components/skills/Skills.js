@@ -24,36 +24,30 @@ class Skills extends Component {
   images = {
     FrontEnd: [
       {
+        id: "fe1",
         url: reactlogo,
         alt: "React JS",
         height: "6rem",
         width: "6rem"
       },
       {
+        id: "fe2",
         url: jslogo,
         alt: "Java Script",
         height: "6rem",
         width: "6rem"
       },
       {
+        id: "fe3",
         url: jquerylogo,
         alt: "jQuery",
         height: "5rem",
         width: "12rem"
       },
+      { id: "fe4", url: html5, alt: "HTML 5", height: "6rem", width: "6rem" },
+      { id: "fe5", url: css, alt: "CSS 3", height: "7rem", width: "6rem" },
       {
-        url: html5,
-        alt: "HTML 5",
-        height: "6rem",
-        width: "6rem"
-      },
-      {
-        url: css,
-        alt: "CSS 3",
-        height: "7rem",
-        width: "6rem"
-      },
-      {
+        id: "fe6",
         url: bootstrap,
         alt: "Bootstrap",
         height: "7rem",
@@ -62,74 +56,50 @@ class Skills extends Component {
     ],
     Development: [
       {
+        id: "de1",
         url: mern,
         alt: "MERN Stack Pradigm",
         height: "6rem",
         width: "12rem"
       },
       {
+        id: "de2",
         url: sdlc,
         alt: "SDLC paradigm",
         height: "7rem",
         width: "6rem"
       },
-      {
-        url: git,
-        alt: "Git",
-        height: "5rem",
-        width: "12rem"
-      },
-      {
-        url: heroku,
-        alt: "Heroku",
-        height: "7rem",
-        width: "8rem"
-      },
-      {
-        url: github,
-        alt: "Github",
-        height: "7rem",
-        width: "6rem"
-      },
-      {
-        url: trello,
-        alt: "Trello",
-        height: "5rem",
-        width: "12rem"
-      }
+      { id: "de3", url: git, alt: "Git", height: "5rem", width: "12rem" },
+      { id: "de4", url: heroku, alt: "Heroku", height: "7rem", width: "8rem" },
+      { id: "de5", url: github, alt: "Github", height: "7rem", width: "6rem" },
+      { id: "de6", url: trello, alt: "Trello", height: "5rem", width: "12rem" }
     ],
     BackEnd: [
+      { id: "be1", url: node, alt: "Node JS", height: "6rem", width: "8rem" },
       {
-        url: node,
-        alt: "Node JS",
-        height: "6rem",
-        width: "8rem"
-      },
-      {
+        id: "be2",
         url: express,
         alt: "Express JS",
         height: "6rem",
         width: "12rem"
       },
+      { id: "be3", url: mysql, alt: "MySQL", height: "6rem", width: "10rem" },
       {
-        url: mysql,
-        alt: "MySQL",
-        height: "6rem",
-        width: "10rem"
-      },
-      {
+        id: "be4",
         url: mongodb,
         alt: "mongo DB",
         height: "7rem",
         width: "12rem"
       },
       {
+        id: "be5",
         url: sequelize,
         alt: "sequelize",
         height: "7rem",
         width: "6rem"
       },
       {
+        id: "be6",
         url: firebase,
         alt: "Firebase",
         height: "7rem",

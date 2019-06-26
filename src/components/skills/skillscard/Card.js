@@ -9,7 +9,10 @@ function Card({ title, images }) {
       </h2>
       {images.map(image => {
         return (
-          <div className="img-logo mb-2 d-flex justify-content-center align-items-center">
+          <div
+            key={image.id}
+            className="img-logo mb-2 d-flex justify-content-center align-items-center"
+          >
             <img
               src={image.url}
               alt={image.alt}
