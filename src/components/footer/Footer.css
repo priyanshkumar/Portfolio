@@ -1,0 +1,17 @@
+/* footer */
+.footer {
+  background-color: #424242;
+}
+
+/* footer ion-icon */
+.footer ion-icon {
+  color: #ffffff;
+  padding: 3px;
+  font-size: 30px;
+}
+
+/* footer pargraph */
+.footer p {
+  color: #ffffff;
+  font-size: 1rem;
+}

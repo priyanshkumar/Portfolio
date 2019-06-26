@@ -16,7 +16,7 @@ function Contact() {
             </div>
             <div class="row">
               <div class="col-12 d-flex justify-content-center mt-4 my-lg-4">
-                <ul class="contact-details text-center">
+                <ul class="contact-details text-center p-0">
                   <li>28 Fandor Way</li>
                   <li>Brampton, Canada</li>
                   <li>+1 (705) 7337875</li>
