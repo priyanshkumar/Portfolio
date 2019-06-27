@@ -12,9 +12,11 @@
 }
 
 .skills-card h2 {
-  text-decoration: line-through;
   font-size: 2.6rem;
-  font-family: "Carter-one", cursive;
-  font-weight: 900;
-  color: #674c7b;
+  font-family: "Lobster", cursive;
+}
+
+.skills-card:hover {
+  color: #ffffff;
+  background-color: #FFD600;
 }

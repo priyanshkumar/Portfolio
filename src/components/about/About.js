@@ -4,21 +4,19 @@ import priyansh from "./images/priyansh.jpg";
 
 function About() {
   return (
-    <section id="about" className="about px-lg-5 d-flex justify-content-center">
+    <section id="about" className="about py-4 d-flex justify-content-center">
       <div className="row bio-content py-5">
         <div className="col-12 d-flex flex-column align-items-center">
           <img src={priyansh} alt="Priyansh" />
-          <p className="text-center mb-2 px-5">
-            I'm Priyansh. I am a web developer having experience as junior web
-            developer. Educated at University of Toronto Coding Bootcamp &
-            Georgian College as a Computer Programmer. I have skills in
-            front-end as well as back-end development.
+          <p className="mt-3 mb-4 px-5">
+            Hi, I'm Priyansh. I am a <span>full stack developer</span> having
+            experience as junior web developer.
           </p>
-          <p className="text-center px-5">
+          <p className="px-5">
             I’m more about exploring what I can give to the world. Pushing
             myself to the edge is my strength. Learning different things is my
-            hobby. I’m naturally curious for learning and improving my skills in
-            different technologies.
+            hobby. I’m naturally curious about learning and improving my skills
+            in different technologies.
           </p>
         </div>
       </div>
