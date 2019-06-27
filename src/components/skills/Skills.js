@@ -27,31 +27,31 @@ class Skills extends Component {
         id: "fe1",
         url: reactlogo,
         alt: "React JS",
-        height: "6rem",
-        width: "6rem"
+        height: "4rem",
+        width: "4rem"
       },
       {
         id: "fe2",
         url: jslogo,
         alt: "Java Script",
-        height: "6rem",
-        width: "6rem"
+        height: "4rem",
+        width: "4rem"
       },
       {
         id: "fe3",
         url: jquerylogo,
         alt: "jQuery",
-        height: "5rem",
+        height: "4rem",
         width: "12rem"
       },
-      { id: "fe4", url: html5, alt: "HTML 5", height: "6rem", width: "6rem" },
-      { id: "fe5", url: css, alt: "CSS 3", height: "7rem", width: "6rem" },
+      { id: "fe4", url: html5, alt: "HTML 5", height: "4rem", width: "4rem" },
+      { id: "fe5", url: css, alt: "CSS 3", height: "5rem", width: "4rem" },
       {
         id: "fe6",
         url: bootstrap,
         alt: "Bootstrap",
-        height: "7rem",
-        width: "6rem"
+        height: "5rem",
+        width: "4rem"
       }
     ],
     Development: [
@@ -59,58 +59,57 @@ class Skills extends Component {
         id: "de1",
         url: mern,
         alt: "MERN Stack Pradigm",
-        height: "6rem",
-        width: "12rem"
+        height: "4rem",
+        width: "10rem"
       },
       {
         id: "de2",
         url: sdlc,
         alt: "SDLC paradigm",
-        height: "7rem",
-        width: "6rem"
+        height: "4rem",
+        width: "4rem"
       },
-      { id: "de3", url: git, alt: "Git", height: "5rem", width: "12rem" },
-      { id: "de4", url: heroku, alt: "Heroku", height: "7rem", width: "8rem" },
-      { id: "de5", url: github, alt: "Github", height: "7rem", width: "6rem" },
-      { id: "de6", url: trello, alt: "Trello", height: "5rem", width: "12rem" }
+      { id: "de3", url: git, alt: "Git", height: "4rem", width: "10rem" },
+      { id: "de4", url: heroku, alt: "Heroku", height: "4rem", width: "4rem" },
+      { id: "de5", url: github, alt: "Github", height: "4rem", width: "4rem" },
+      { id: "de6", url: trello, alt: "Trello", height: "4rem", width: "10rem" }
     ],
     BackEnd: [
-      { id: "be1", url: node, alt: "Node JS", height: "6rem", width: "8rem" },
+      { id: "be1", url: node, alt: "Node JS", height: "4rem", width: "6rem" },
       {
         id: "be2",
         url: express,
         alt: "Express JS",
-        height: "6rem",
-        width: "12rem"
+        height: "4rem",
+        width: "10rem"
       },
-      { id: "be3", url: mysql, alt: "MySQL", height: "6rem", width: "10rem" },
+      { id: "be3", url: mysql, alt: "MySQL", height: "4rem", width: "8rem" },
       {
         id: "be4",
         url: mongodb,
         alt: "mongo DB",
-        height: "7rem",
-        width: "12rem"
+        height: "4rem",
+        width: "10rem"
       },
       {
         id: "be5",
         url: sequelize,
         alt: "sequelize",
-        height: "7rem",
-        width: "6rem"
+        height: "5rem",
+        width: "4rem"
       },
       {
         id: "be6",
         url: firebase,
         alt: "Firebase",
-        height: "7rem",
-        width: "6rem"
+        height: "5rem",
+        width: "4rem"
       }
     ]
   };
   render() {
     return (
       <div
-        id="skills"
         className="container skills mb-5 d-flex justify-content-center"
       >
         <Card title={"Front-End"} images={this.images.FrontEnd} />

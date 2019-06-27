@@ -3,7 +3,7 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <section id="contact" class="row m-0 py-5 contact-background">
+    <section class="row contact m-0 py-5 contact-background">
       <div class="container py-lg-5">
         <div class="row">
           <div class="col-lg-5 col-sm-12 d-flex flex-column justify-content-center align-items-center">

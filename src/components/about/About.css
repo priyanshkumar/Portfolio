@@ -5,16 +5,23 @@
   height: 90vh;
 }
 
+.bio-content img {
+  width: 18%;
+  height: 28%;
+  border-radius: 50%;
+  border: 4px solid #ffd600;
+}
+
 .bio-content {
   width: 65%;
 }
 
 .bio-content p {
-  color: #ffffff;
+  width: 75%;
+  font-family: "Lato", sans-serif;
+  color: #f7f7f7;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  letter-spacing: 1px;
-  word-spacing: 4px;
 }
 
 .bio-content h2 {

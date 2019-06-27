@@ -104,7 +104,7 @@ class Portfolis extends Component {
   ];
   render() {
     return (
-      <section id="portfolio" className="py-5 container">
+      <section className="py-5 container">
         <div className="heading text-center">
           <h2>PORTFOLIO</h2>
         </div>

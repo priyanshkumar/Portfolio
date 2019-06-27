@@ -11,22 +11,22 @@ body {
 }
 
 /* Contact-heading */
-#contact h2 {
+.contact h2 {
   font-family: "Bree Serif", serif;
   color: #2b2828;
 }
 
-#contact .heading-border {
+.contact .heading-border {
   border-bottom: 3px solid #0078ff;
   padding-bottom: 3px;
 }
 
 /* contact-content */
-#contact ul {
+.contact ul {
   line-height: 2rem;
 }
 
-#contact li {
+.contact li {
   list-style-type: none;
   font-size: 1.3rem;
 }

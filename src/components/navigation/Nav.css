@@ -33,14 +33,41 @@ nav h4 {
   color: #333333;
 }
 
+.nav-ionicon .box {
+  font-size: 1.6rem;
+}
+
+.nav-ionicon .box:hover {
+  background-color: #333333;
+  animation: navionicon 2s;
+}
+.nav-ionicon .box:hover ion-icon {
+  color: #ffffff;
+}
+
+@keyframes navionicon {
+  0% {
+    margin-top: -20px;
+    background-color: transparent;
+  }
+}
+
+.nav-ionicon ion-icon {
+  color: #333333;
+}
+
 .navlinks li {
   list-style-type: none;
 }
 
 /* nav links-hover */
 .navlinks a:hover {
-  border-bottom: 2px solid #0078ff;
+  border-bottom: 4px solid rgb(255, 186, 0);
   padding-bottom: 3px;
   transition-duration: 600ms;
   text-decoration: none;
+}
+
+.nav-ionicon {
+  width: 383.247px;
 }
