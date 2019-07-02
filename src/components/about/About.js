@@ -8,7 +8,7 @@ function About() {
       <div className="row bio-content py-5">
         <div className="col-12 d-flex flex-column align-items-center">
           <img src={priyansh} alt="Priyansh" />
-          <p className="mt-3 mb-4 px-5">
+          <p className="mt-5 mb-4 px-5">
             Hi, I'm Priyansh. I am a <span>full stack developer</span> having
             experience as junior web developer.
           </p>
