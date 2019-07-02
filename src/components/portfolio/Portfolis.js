@@ -105,11 +105,7 @@ class Portfolis extends Component {
   render() {
     return (
       <section className="py-5 container">
-        <div className="text-center">
-          <div className="heading">
-            <span className="p-5">PORTFOLIO</span>
-          </div>
-        </div>
+        <div className="text-center heading"><h2>PORTFOLIO</h2></div>
         <div className="row d-flex justify-content-center">
           {this.Pcard.map(card => {
             return <PortCard card={card} key={card.id} />;
