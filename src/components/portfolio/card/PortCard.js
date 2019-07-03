@@ -12,20 +12,22 @@ function PortCard({ card }) {
             alt=""
           />
           <div className="card-body">
-            <h4 className="card-title">{card.front.title}</h4>
+            <h4 className="card-title m-1">{card.front.title}</h4>
             <p className="card-text">{card.front.content}</p>
           </div>
         </div>
-        <div className="card card-back ">
-          <div className="card-body">
-            <p className="m-0">{card.back.content}</p>
+        <div className="card card-back">
+          <div className="card-body d-flex flex-column justify-content-center align-items-center">
+            <p className="mb-2">{card.back.content}</p>
             <p>{card.back.Built}</p>
-            <a href={card.back.heroku} className="btn btn-primary mr-2">
-              Checkout
-            </a>
-            <a href={card.back.github} className="btn btn-primary">
-              GitHub
-            </a>
+            <div className="d-flex justify-content-center">
+              <a href={card.back.heroku} className="btn btn-primary mr-2">
+                Checkout
+              </a>
+              <a href={card.back.github} className="btn btn-primary">
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>

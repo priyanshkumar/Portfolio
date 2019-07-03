@@ -10,7 +10,8 @@ class Portfolis extends Component {
       front: {
         img: image1,
         title: "Hello World",
-        content: "loremokdfvk fLSJ KNSDKna kksndn,l, klsnlks"
+        content:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
       },
       back: {
         content:
@@ -26,13 +27,14 @@ class Portfolis extends Component {
       front: {
         img: image1,
         title: "Hello World",
-        content: "loremokdfvk fLSJ KNSDKna kksndn,l, klsnlks"
+        content:
+          "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       back: {
         Built:
           "Built with: JavaScript, Firebase, Ajax, jQuery, HTML 5, CSS 3, Bootstrap, Google Fonts , moment.js.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         github: "https://github.com/priyanshkumar/Burger-FullStackApp",
         heroku: "https://burger-fullstackapp.herokuapp.com/"
       }
@@ -42,7 +44,7 @@ class Portfolis extends Component {
       front: {
         img: image1,
         title: "Hello World",
-        content: "loremokdfvk fLSJ KNSDKna kksndn,l, klsnlks"
+        content: "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       back: {
         Built:
@@ -58,13 +60,13 @@ class Portfolis extends Component {
       front: {
         img: image1,
         title: "Hello World",
-        content: "loremokdfvk fLSJ KNSDKna kksndn,l, klsnlks"
+        content: "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       back: {
         Built:
           "Built with: JavaScript, Firebase, Ajax, jQuery, HTML 5, CSS 3, Bootstrap, Google Fonts , moment.js.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         github: "https://github.com/priyanshkumar/Burger-FullStackApp",
         heroku: "https://burger-fullstackapp.herokuapp.com/"
       }
@@ -74,7 +76,7 @@ class Portfolis extends Component {
       front: {
         img: image1,
         title: "Hello World",
-        content: "loremokdfvk fLSJ KNSDKna kksndn,l, klsnlks"
+        content: "Lorem Ipsum is simply dummy printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       back: {
         Built:
@@ -90,13 +92,13 @@ class Portfolis extends Component {
       front: {
         img: image1,
         title: "Hello World",
-        content: "loremokdfvk fLSJ KNSDKna kksndn,l, klsnlks"
+        content: "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       back: {
         Built:
           "Built with: JavaScript, Firebase, Ajax, jQuery, HTML 5, CSS 3, Bootstrap, Google Fonts , moment.js.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         github: "https://github.com/priyanshkumar/Burger-FullStackApp",
         heroku: "https://burger-fullstackapp.herokuapp.com/"
       }
@@ -105,7 +107,9 @@ class Portfolis extends Component {
   render() {
     return (
       <section className="py-5 container">
-        <div className="text-center heading"><h2>PORTFOLIO</h2></div>
+        <div className="text-center heading">
+          <h2>PORTFOLIO</h2>
+        </div>
         <div className="row d-flex justify-content-center">
           {this.Pcard.map(card => {
             return <PortCard card={card} key={card.id} />;

@@ -1,17 +1,20 @@
 /* footer */
 .footer {
-  background-color: rgb(255, 186, 0);
+  background-color: rgba(0, 0, 0, 0.58);
 }
 
 /* footer ion-icon */
 .footer ion-icon {
-  color: #ffffff;
-  padding: 3px;
-  font-size: 30px;
+  color: #fefefe;
+  font-size: 1.8rem;
+}
+
+.footer ion-icon:hover {
+  color: #ffba00;
 }
 
 /* footer pargraph */
 .footer p {
-  color: #ffffff;
-  font-size: 1rem;
+  color: #fefefe;
+  font-size: 1.1rem;
 }
