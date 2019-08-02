@@ -1,0 +1,32 @@
+body {
+  background-color: #ffffff;
+  font-family: "Ropa Sans", sans-serif;
+  color: #3d3e3b;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+/* Contact-background */
+.contact-background {
+  background-color: #f7f7f7;
+}
+
+/* Contact-heading */
+.contact h2 {
+  font-family: "Bree Serif", serif;
+  color: #2b2828;
+}
+
+.contact .heading-border {
+  border-bottom: 3px solid #0078ff;
+  padding-bottom: 3px;
+}
+
+/* contact-content */
+.contact ul {
+  line-height: 2rem;
+}
+
+.contact li {
+  list-style-type: none;
+  font-size: 1.3rem;
+}
