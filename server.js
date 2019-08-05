@@ -23,60 +23,73 @@ app.post("/api/contact", (req, res) => {
   } else if (!req.body.message) {
     res.json({ error: "Please provide the description!" });
   } else {
-    let transporter = nodemailer.createTransport({
-      service: "gmail", // true for 465, false for other ports
-      auth: {
-        user: process.env.user, // generated ethereal user
-        pass: process.env.pass // generated ethereal password
-      }
-    });
-
-    // send mail with defined transport object
-    transporter.sendMail(
-      {
-        from: "pradadiya667@gmail.com", // sender address
-        to: req.body.email, // list of receivers
-        subject: "Conformation!", // Subject line
-        html: `<h4>Hello ${
-          req.body.name
-        },</h4><p>This is to verify that Priyansh Radadiya has recieved your email.</p><p>He will be contacting you within 2 business day.</p><p>For any urgent inquires you can contact him on 7057337875</p><p>Thankyou</p><p>Priyansh</p>` // plain text body
-      },
-      (err, data) => {
-        if (err) {
-          console.log(err);
-          res.json({
-            error:
-              "There might be something wrong. Please check the email or try again later.",
-            err: err
-          });
-        } else {
-          console.log("email sent");
-          res.json({
-            sent:
-              "Hey you must have recived an email. If not check your email and submit again."
-          });
-        }
-      }
-    );
-    transporter.sendMail(
-      {
-        from: "pradadaiya667@gmail.com", // sender address
-        to: "pradadiya667@gmail.com", // list of receivers
-        subject: "From PR Portfolio", // Subject line
-        html: `<h2>Hi Priyansh you got a new message</h2>
-        <p>name: ${req.body.name}</p>
-        <p>email: ${req.body.email}</p><p>subject: ${
-          req.body.subject
-        }</p><p>message: ${req.body.message}</p><p>ThankYou</p>` // plain text body
-      },
-      (err, data) => {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log("email sent");
-        }
-      }
-    );
+    //   let transporter = nodemailer.createTransport({
+    //     service: "gmail", // true for 465, false for other ports
+    //     auth: {
+    //       user: process.env.user, // generated ethereal user
+    //       pass: process.env.pass // generated ethereal password
+    //     }
+    //   });
+    //   transporter.set("oauth2_provision_cb", (user, renew, callback) => {
+    //     let accessToken = userTokens[user];
+    //     if (!accessToken) {
+    //       return callback(new Error("Unknown user"));
+    //     } else {
+    //       return callback(null, accessToken);
+    //     }
+    //   });
+    //   transporter.on('token', token => {
+    //     console.log('A new access token was generated');
+    //     console.log('User: %s', token.user);
+    //     console.log('Access Token: %s', token.accessToken);
+    //     console.log('Expires: %s', new Date(token.expires));
+    // });
+    //   // send mail with defined transport object
+    //   transporter.sendMail(
+    //     {
+    //       from: "pradadiya667@gmail.com", // sender address
+    //       to: req.body.email, // list of receivers
+    //       subject: "Conformation!", // Subject line
+    //       html: `<h4>Hello ${
+    //         req.body.name
+    //       },</h4><p>This is to verify that Priyansh Radadiya has recieved your email.</p><p>He will be contacting you within 2 business day.</p><p>For any urgent inquires you can contact him on 7057337875</p><p>Thankyou</p><p>Priyansh</p>` // plain text body
+    //     },
+    //     (err, data) => {
+    //       if (err) {
+    //         console.log(err);
+    //         res.json({
+    //           error:
+    //             "There might be something wrong. Please check the email or try again later.",
+    //           err: err
+    //         });
+    //       } else {
+    //         console.log("email sent");
+    //         res.json({
+    //           sent:
+    //             "Hey you must have recived an email. If not check your email and submit again."
+    //         });
+    //       }
+    //     }
+    //   );
+    //   transporter.sendMail(
+    //     {
+    //       from: "pradadaiya667@gmail.com", // sender address
+    //       to: "pradadiya667@gmail.com", // list of receivers
+    //       subject: "From PR Portfolio", // Subject line
+    //       html: `<h2>Hi Priyansh you got a new message</h2>
+    //       <p>name: ${req.body.name}</p>
+    //       <p>email: ${req.body.email}</p><p>subject: ${
+    //         req.body.subject
+    //       }</p><p>message: ${req.body.message}</p><p>ThankYou</p>` // plain text body
+    //     },
+    //     (err, data) => {
+    //       if (err) {
+    //         console.log(err);
+    //       } else {
+    //         console.log("email sent");
+    //       }
+    //     }
+    //   );
   }
 });
 
