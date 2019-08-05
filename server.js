@@ -46,7 +46,8 @@ app.post("/api/contact", (req, res) => {
           console.log(err);
           res.json({
             error:
-              "There might be something wrong. Please check the email or try again later."
+              "There might be something wrong. Please check the email or try again later.",
+            err: err
           });
         } else {
           console.log("email sent");

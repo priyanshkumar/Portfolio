@@ -31,6 +31,10 @@ class Contact extends React.Component {
             error: response.data.error
           });
         }
+        if (response.data.err) {
+          console.log(err);
+        }
+
         if (response.data.sent) {
           this.setState({
             sent: response.data.sent,
