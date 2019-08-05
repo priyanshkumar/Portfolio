@@ -32,7 +32,7 @@ class Contact extends React.Component {
           });
         }
         if (response.data.err) {
-          console.log(err);
+          console.log(response.data.err);
         }
 
         if (response.data.sent) {
