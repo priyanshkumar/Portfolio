@@ -63,7 +63,7 @@ function Nav() {
               className="d-flex justify-content-center align-items-center"
               href="#about"
             >
-              ABOUT
+              About
             </a>
           </li>
           <li className="px-2">
@@ -71,7 +71,7 @@ function Nav() {
               className="d-flex justify-content-center align-items-center"
               href="#skills"
             >
-              <h3 className="m-0">I</h3>KNOW
+              Skills
             </a>
           </li>
           <li className="px-2">
@@ -79,7 +79,7 @@ function Nav() {
               className="d-flex justify-content-center align-items-center"
               href="#portfolio"
             >
-              PORTFOLIO
+              Portfolio
             </a>
           </li>
           <li className="px-2">
@@ -87,7 +87,7 @@ function Nav() {
               className="d-flex justify-content-center align-items-center"
               href="#contact"
             >
-              CONTACT
+              Contact
             </a>
           </li>
         </ul>

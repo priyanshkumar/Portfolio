@@ -11,7 +11,7 @@ class Portfolis extends Component {
         img: image1,
         title: "ParkEZ",
         content:
-          "ParkEZ allows truckers and trucking companies to reserve parking spaces for heavy equipment eg., trucks, trailers, and construction vehicles at a safe location."
+          "ParkEZ allows trucking companies to reserve parking spaces for heavy equipment eg., trucks, trailers, and construction vehicles at a safe location."
       },
       back: {
         content:
@@ -43,14 +43,15 @@ class Portfolis extends Component {
       id: 3,
       front: {
         img: image1,
-        title: "Bloggit",
+        title: "Mongo Scrapper",
         content:
-          "Bloggit gives you a chance to share your ideas to the world. Get creative and showcase your interest..."
+          "Mongo Scrape is an app which scrapes articles from the NewYorkTimes web site and displays news items based on the search given by the user."
       },
       back: {
         Built:
-          "Built with: JavaScript, Firebase, Ajax, jQuery, HTML 5, CSS 3, Bootstrap, Google Fonts , moment.js.",
-        content: "",
+          "Built with: HTML5, CSS3, Bootstrap, Node, Express, MongoDB, Handlebars, Cheerio NPM.",
+        content:
+          "You can save your choice of scraped sport article and add a note to it for your reference.",
         github: "https://github.com/priyanshkumar/Bloggit",
         heroku: "https://priyanshkumar.github.io/Bloggit/login.html"
       }

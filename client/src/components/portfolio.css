@@ -1,6 +1,11 @@
+#about {
+  position: absolute;
+  margin-top: -5%;
+}
+
 #skills {
   position: absolute;
-  margin-top: -25%;
+  margin-top: -15%;
 }
 
 #portfolio {

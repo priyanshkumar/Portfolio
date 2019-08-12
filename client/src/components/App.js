@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Portfolio from "./portfolio";
 
 function App() {
-  return(
+  return (
     <Router>
-      <Route exact path="/" component={Portfolio}/>
+      <Route exact path="/" component={Portfolio} />
     </Router>
   );
 }
