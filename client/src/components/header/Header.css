@@ -12,12 +12,12 @@
 .headerHero h1 {
   font-family: "Ropa Sans", sans-serif;
   letter-spacing: 2px;
-
   border: 5px solid #e8e7e3;
   color: #e8e7e3;
-  font-size: 72px;
+  font-size: 5rem;
   animation: text 3s 1;
   z-index: 1;
+  margin: 2rem;
 }
 
 .headerHero h1:hover {
@@ -65,5 +65,23 @@
     color: transparent;
     background-color: transparent;
     letter-spacing: 2px;
+  }
+}
+
+
+@media (max-width: 850px){
+  .headerHero h1{
+    width: 27rem;
+  }
+}
+
+@media (max-width: 570px){
+  .headerHero h1{
+    width: 18rem;
+    font-size: 3rem
+  }
+  .headerHero h2 {
+    
+    font-size: 2rem;
   }
 }

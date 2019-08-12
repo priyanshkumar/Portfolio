@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Nav.css";
 
 function Nav() {
@@ -59,36 +60,52 @@ function Nav() {
       <div className="d-flex align-items-center">
         <ul className="navlinks d-flex m-0">
           <li className="px-2">
-            <a
+            <Link
+              activeClass="active"
               className="d-flex justify-content-center align-items-center"
-              href="#about"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="px-2">
-            <a
+            <Link
+              activeClass="active"
               className="d-flex justify-content-center align-items-center"
-              href="#skills"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               Skills
-            </a>
+            </Link>
           </li>
           <li className="px-2">
-            <a
+            <Link
+              activeClass="active"
               className="d-flex justify-content-center align-items-center"
-              href="#portfolio"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="px-2">
-            <a
+            <Link
+              activeClass="active"
               className="d-flex justify-content-center align-items-center"
-              href="#contact"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
