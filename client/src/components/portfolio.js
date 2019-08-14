@@ -13,6 +13,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div>
+        <div id="home" />
         <Header />
         <Nav />
         <div id="about" />
