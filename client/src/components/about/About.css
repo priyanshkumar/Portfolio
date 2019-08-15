@@ -1,10 +1,6 @@
-.about {
-  height: 100vh;
-}
-
 .bio-content img {
-  width: 11%;
-  height: 33%;
+  width: 126px;
+  height: 135px;
   border-radius: 50%;
   border: 4px solid #ffd600;
 }

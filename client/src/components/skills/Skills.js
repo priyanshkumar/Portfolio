@@ -109,9 +109,7 @@ class Skills extends Component {
   };
   render() {
     return (
-      <div
-        className="container skills mb-5 d-flex justify-content-center"
-      >
+      <div className="row hero mb-5 mx-0 d-flex justify-content-center">
         <Card title={"Front-End"} images={this.images.FrontEnd} />
         <Card title={"Development"} images={this.images.Development} />
         <Card title={"Back-End"} images={this.images.BackEnd} />

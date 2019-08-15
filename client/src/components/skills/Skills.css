@@ -1,4 +1,9 @@
-.skills {
-  margin-top: -7%;
-  width: 100vw;
+.hero {
+
+  background: url(./images/bg-img.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
 }
