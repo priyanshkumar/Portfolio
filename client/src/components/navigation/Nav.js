@@ -25,7 +25,7 @@ function Nav() {
         className="collapse navbar-collapse responsive-css"
         id="collapse-target"
       >
-        <div className="navbar-nav d-flex justify-content-between w-100">
+        <div className="navbar-nav connect w-100">
           <div
             className="nav-ionicon d-flex justify-content-center align-items-center"
             id="navbarhit"
@@ -78,10 +78,10 @@ function Nav() {
           </div>
           <div className="d-flex align-items-center justify-content-center">
             <ul className="navbar-nav navlinks d-flex">
-              <li className="px-2">
+              <li className="px-2 nav-item">
                 <Link
                   activeClass="active"
-                  className="d-flex justify-content-center align-items-center"
+                  className="d-flex nav-link justify-content-center align-items-center"
                   to="home"
                   spy={true}
                   smooth={true}

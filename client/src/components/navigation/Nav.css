@@ -3,11 +3,12 @@ nav {
   box-shadow: 0px -22px 90px #717577bf;
   background-color: #ffffff;
   z-index: 1;
+  color: #333333;
 }
 
 /* nav heading logo */
 nav h4 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Lexend Mega', sans-serif;
 }
 
 .mainLogo:hover{
@@ -55,12 +56,11 @@ nav h4 {
 }
 
 /* nav bar anchor links */
-.navlinks a {
+.nav-link{
   height: 2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: "Roboto Mono", monospace;
-  color: #333333;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .navlinks{
@@ -102,6 +102,11 @@ nav h4 {
   text-decoration: none;
 }
 
+.responsive-css .connect{
+display: flex;
+justify-content: space-between;
+}
+
 @media (max-width: 991px){
 .nav-ionicon{
   margin-top: 2rem; 
@@ -111,6 +116,7 @@ nav h4 {
 }
 .navlinks {
   margin-bottom: 2rem;
+  margin-right: 0;
 }
 nav{
   padding: 0px;
@@ -120,8 +126,20 @@ nav{
 .responsive-css{
   height: 100vh;
 }
+.responsive-css .connect{
+  display: flex;
+  justify-content: space-around;
+  height: 90%;
+  }
+ .nav-link{
+   padding: 1rem 0;
+   margin:1rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
 .nav-ionicon ion-icon {
   color: #ffffff;
+  font-size: 2rem;
 }
 .nav-ionicon .box:hover {
   background-color: #ffffffe0;
