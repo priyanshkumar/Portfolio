@@ -3,7 +3,6 @@ nav {
   box-shadow: 0px -22px 90px #717577bf;
   background-color: #ffffff;
   z-index: 1;
-  color: #333333;
 }
 
 /* nav heading logo */
@@ -60,6 +59,7 @@ nav h4 {
   height: 2rem;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #333333;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -94,6 +94,10 @@ nav h4 {
   list-style-type: none;
 }
 
+.active{
+  color: rgb(255, 186, 0);
+}
+
 /* nav links-hover */
 .navlinks a:hover {
   border-bottom: solid rgb(255, 186, 0);
@@ -120,7 +124,6 @@ justify-content: space-between;
 }
 nav{
   padding: 0px;
-  color: #fffafa;
   background-color: #000000d1;
 }
 .responsive-css{
@@ -134,8 +137,16 @@ nav{
  .nav-link{
    padding: 1rem 0;
    margin:1rem 0;
+   color: #fffafa !important;
     font-size: 2rem;
     text-transform: uppercase;
+  }
+  .navlinks a:hover {
+    border-bottom: none;
+    padding-bottom:0px;
+    transition-duration: 300ms;
+    text-decoration: none;
+    color:  rgb(255, 186, 0) !important;
   }
 .nav-ionicon ion-icon {
   color: #ffffff;

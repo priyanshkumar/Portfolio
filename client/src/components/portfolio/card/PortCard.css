@@ -16,13 +16,25 @@
   width: 100%;
   height: 60%;
   transform: rotateY(180deg);
-  background: url(../images/card1.jpeg);
   border-radius: 0px;
   color: #ffffff;
+}
+
+.portfolio .image1{
+  background: url(../images/cardauto.jpeg);
   background-attachment: fixed;
   background-size: cover;
 }
-
+.portfolio .image2{
+  background: url(../images/card2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.portfolio .image3{
+  background: url(../images/card3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
 .portfolio .card-front{
   height: 100%;
 }
@@ -58,7 +70,8 @@
 }
 
 .portfolio p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .portfolio ion-icon{

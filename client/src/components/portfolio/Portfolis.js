@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import PortCard from "./card/PortCard";
 import "./Portfolis.css";
-import image1 from "./images/card1.jpeg";
+import image2 from "./images/card2.jpg";
+import image3 from "./images/card3.jpg";
+import image4 from "./images/cardauto.jpeg";
 
 class Portfolis extends Component {
   Pcard = [
     {
       id: 1,
       front: {
-        img: image1,
+        img: image4,
         title: "ParkEZ",
         content:
           "ParkEZ allows trucking companies to reserve parking spaces for heavy equipment eg., trucks, trailers, and construction vehicles at a safe location."
@@ -25,7 +27,7 @@ class Portfolis extends Component {
     {
       id: 2,
       front: {
-        img: image1,
+        img: image2,
         title: "Bargane",
         content:
           "Bargane is a Market Place app where people can feature their personal belongings for their desired price."
@@ -42,7 +44,7 @@ class Portfolis extends Component {
     {
       id: 3,
       front: {
-        img: image1,
+        img: image3,
         title: "Mongo Scrapper",
         content:
           "Mongo Scrape is an app which scrapes articles from the NewYorkTimes web site and displays news items based on the search given by the user."
@@ -110,9 +112,11 @@ class Portfolis extends Component {
   ];
   render() {
     return (
-      <section className="py-5 container">
+      <section className="pb-5 container">
         <div className="text-center heading">
-          <h2>PORTFOLIO</h2>
+          <h2>
+            <span>Portfolio</span>
+          </h2>
         </div>
         <div className="row d-flex justify-content-center">
           {this.Pcard.map(card => {

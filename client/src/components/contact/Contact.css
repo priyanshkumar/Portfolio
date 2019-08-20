@@ -17,7 +17,8 @@ body {
 }
 
 .contact .heading-border {
-  border-bottom: 3px solid #0078ff;
+  border-bottom: 3px solid rgb(255, 186, 0);
+  padding-bottom: 3px;
   padding-bottom: 3px;
 }
 

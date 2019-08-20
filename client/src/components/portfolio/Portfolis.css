@@ -1,3 +1,8 @@
 .heading h2 {
-  font-size: 3rem;
+  font-size: 3rem;    
+  font-family: "Bree Serif", serif;
+}
+.heading h2 span{
+  border-bottom: 3px solid rgb(255, 186, 0);
+  padding-bottom: 3px;
 }
