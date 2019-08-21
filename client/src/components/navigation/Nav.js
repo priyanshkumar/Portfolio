@@ -76,7 +76,7 @@ function Nav() {
               </a>
             </div>
           </div>
-          <div className="collapse navbar-collapse d-flex align-items-center justify-content-center">
+          <div className="d-flex align-items-center justify-content-center">
             <ul className="navbar-nav navlinks d-flex">
               <li className="px-2 nav-item">
                 <Link

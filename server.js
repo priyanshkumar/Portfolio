@@ -1,5 +1,8 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
+
 require("dotenv").config();
 
 const app = express();
@@ -9,9 +12,40 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+const oauth2Client = new OAuth2(
+  process.env.clientID,
+  process.env.clientSecret, // Client Secret
+  "https://developers.google.com/oauthplayground" // Redirect URL
+);
+
+oauth2Client.setCredentials({
+  refresh_token: process.env.refreshToken
+});
+const accessToken = oauth2Client.getAccessToken();
+
+const smtpTransport = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    type: "OAuth2",
+    user: process.env.user,
+    clientId: process.env.clientId,
+    clientSecret: process.env.clientSecret,
+    refreshToken: process.env.refreshToken,
+    accessToken: accessToken
+  }
+});
 
 app.post("/api/contact", (req, res) => {
   if (!req.body.name) {
@@ -23,73 +57,54 @@ app.post("/api/contact", (req, res) => {
   } else if (!req.body.message) {
     res.json({ error: "Please provide the description!" });
   } else {
-    //   let transporter = nodemailer.createTransport({
-    //     service: "gmail", // true for 465, false for other ports
-    //     auth: {
-    //       user: process.env.user, // generated ethereal user
-    //       pass: process.env.pass // generated ethereal password
-    //     }
-    //   });
-    //   transporter.set("oauth2_provision_cb", (user, renew, callback) => {
-    //     let accessToken = userTokens[user];
-    //     if (!accessToken) {
-    //       return callback(new Error("Unknown user"));
-    //     } else {
-    //       return callback(null, accessToken);
-    //     }
-    //   });
-    //   transporter.on('token', token => {
-    //     console.log('A new access token was generated');
-    //     console.log('User: %s', token.user);
-    //     console.log('Access Token: %s', token.accessToken);
-    //     console.log('Expires: %s', new Date(token.expires));
-    // });
-    //   // send mail with defined transport object
-    //   transporter.sendMail(
-    //     {
-    //       from: "pradadiya667@gmail.com", // sender address
-    //       to: req.body.email, // list of receivers
-    //       subject: "Conformation!", // Subject line
-    //       html: `<h4>Hello ${
-    //         req.body.name
-    //       },</h4><p>This is to verify that Priyansh Radadiya has recieved your email.</p><p>He will be contacting you within 2 business day.</p><p>For any urgent inquires you can contact him on 7057337875</p><p>Thankyou</p><p>Priyansh</p>` // plain text body
-    //     },
-    //     (err, data) => {
-    //       if (err) {
-    //         console.log(err);
-    //         res.json({
-    //           error:
-    //             "There might be something wrong. Please check the email or try again later.",
-    //           err: err
-    //         });
-    //       } else {
-    //         console.log("email sent");
-    //         res.json({
-    //           sent:
-    //             "Hey you must have recived an email. If not check your email and submit again."
-    //         });
-    //       }
-    //     }
-    //   );
-    //   transporter.sendMail(
-    //     {
-    //       from: "pradadaiya667@gmail.com", // sender address
-    //       to: "pradadiya667@gmail.com", // list of receivers
-    //       subject: "From PR Portfolio", // Subject line
-    //       html: `<h2>Hi Priyansh you got a new message</h2>
-    //       <p>name: ${req.body.name}</p>
-    //       <p>email: ${req.body.email}</p><p>subject: ${
-    //         req.body.subject
-    //       }</p><p>message: ${req.body.message}</p><p>ThankYou</p>` // plain text body
-    //     },
-    //     (err, data) => {
-    //       if (err) {
-    //         console.log(err);
-    //       } else {
-    //         console.log("email sent");
-    //       }
-    //     }
-    //   );
+    // send mail with defined transport object
+    smtpTransport.sendMail(
+      {
+        from: process.env.user, // sender address
+        to: req.body.email, // list of receivers
+        subject: "Conformation!", // Subject line
+        generateTextFromHTML: true,
+        html: `<h4>Hello ${
+          req.body.name
+        },</h4><p>This is to verify that Priyansh Radadiya has recieved your email.</p><p>He will be contacting you within 2 business day.</p><p>For any urgent inquires you can contact him on 7057337875</p><p>Thankyou</p><p>Priyansh</p>` // plain text body
+      },
+      (err, data) => {
+        if (err) {
+          console.log(err);
+          res.json({
+            error:
+              "There might be something wrong. Please check the email or try again later.",
+            err: err
+          });
+        } else {
+          console.log("email sent");
+          res.json({
+            sent:
+              "Hey you must have recived an email. If not please submit again."
+          });
+        }
+      }
+    );
+    smtpTransport.sendMail(
+      {
+        from: process.env.user, // sender address
+        to: "radadiyapriyansh@gmail.com", // list of receivers
+        subject: "From PR Portfolio", // Subject line
+        generateTextFromHTML: true,
+        html: `<h2>Hi Priyansh you got a new message</h2>
+          <p>name: ${req.body.name}</p>
+          <p>email: ${req.body.email}</p><p>subject: ${
+          req.body.subject
+        }</p><p>message: ${req.body.message}</p><p>ThankYou</p>` // plain text body
+      },
+      (err, data) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("email sent");
+        }
+      }
+    );
   }
 });
 
