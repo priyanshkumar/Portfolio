@@ -159,36 +159,11 @@ nav{
   color: #000000;
 }
 .mainLogo a{
-  background-color: #313131b0;
-  color: #B6B6B6;
-}
-.mainLogo a:hover {
-  animation: mainlogo 2s;
-  text-decoration: none;
+  border-radius: 0%;
   background-color: #ffffff;
-  color: #333333;;
-}
-.mainLogo:hover{ 
-  background-color: #ffffff;
+  color: #333333;
 }
 
-@keyframes mainlogo{
-0%{
-  color: #ffffff;
-  background-color: #333333;
-}
-40%{
-  background-color: #ffffff;
-}
-50%{
-  font-size: 0px;
-  font-weight: bold;
-}
-100%{
-  color: #333333;;
-  background-color: #ffffff;
-}
-}
 .nav-button:focus{
 outline: none
 }

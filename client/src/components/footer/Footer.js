@@ -1,5 +1,5 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return (
@@ -16,24 +16,6 @@ function Footer() {
                     rel="noopener noreferrer"
                   >
                     <ion-icon name="logo-linkedin" />
-                  </a>
-                </li>
-                <li className="px-1">
-                  <a
-                    href="https://www.facebook.com/rayansh.radadiya.05182138?ref=bookmarks"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ion-icon name="logo-facebook">Icon</ion-icon>
-                  </a>
-                </li>
-                <li className="px-1">
-                  <a
-                    href="https://twitter.com/PriyanshRadadi2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ion-icon name="logo-twitter">Icon</ion-icon>
                   </a>
                 </li>
                 <li className="px-1">
