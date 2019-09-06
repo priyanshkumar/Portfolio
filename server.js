@@ -88,7 +88,7 @@ app.post("/api/contact", (req, res) => {
     smtpTransport.sendMail(
       {
         from: process.env.user, // sender address
-        to: "radadiyapriyansh@gmail.com", // list of receivers
+        to: process.env.reciver, // list of receivers
         subject: "From PR Portfolio", // Subject line
         generateTextFromHTML: true,
         html: `<h2>Hi Priyansh you got a new message</h2>

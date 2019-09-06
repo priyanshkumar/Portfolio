@@ -16,5 +16,9 @@
 /* footer pargraph */
 .footer p {
   color: #fefefe;
-  font-size: 1.1rem;
+}
+
+.lead-2{
+  font-size: 1.2rem;
+  font-family: 'Lobster', cursive;
 }

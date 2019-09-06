@@ -86,6 +86,8 @@ function Nav() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
                 >
                   Home
                 </Link>
@@ -99,6 +101,8 @@ function Nav() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
                 >
                   About
                 </Link>
@@ -111,6 +115,8 @@ function Nav() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
                 >
                   Skills
                 </Link>
@@ -123,6 +129,8 @@ function Nav() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
                 >
                   Portfolio
                 </Link>
@@ -135,6 +143,8 @@ function Nav() {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
                 >
                   Contact
                 </Link>

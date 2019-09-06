@@ -35,14 +35,14 @@ class Skills extends Component {
         url: jslogo,
         alt: "Java Script",
         height: "4rem",
-        width: "4rem"
+        width: "11rem"
       },
-      {
+      { 
         id: "fe3",
         url: jquerylogo,
         alt: "jQuery",
-        height: "4rem",
-        width: "12rem"
+        height: "3.2rem",
+        width: "11rem"
       },
       { id: "fe4", url: html5, alt: "HTML 5", height: "4rem", width: "4rem" },
       { id: "fe5", url: css, alt: "CSS 3", height: "5rem", width: "4rem" },
