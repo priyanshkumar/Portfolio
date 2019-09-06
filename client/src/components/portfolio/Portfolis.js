@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import PortCard from "./card/PortCard";
-import "./Portfolis.css";
-import image2 from "./images/card2.jpg";
-import image3 from "./images/card3.jpg";
-import image4 from "./images/cardauto.jpeg";
+import React, { Component } from 'react';
+import PortCard from './card/PortCard';
+import './Portfolis.css';
+import image2 from './images/card2.jpg';
+import image3 from './images/card3.jpg';
+import image4 from './images/cardauto.jpeg';
 
 class Portfolis extends Component {
   Pcard = [
@@ -11,51 +11,51 @@ class Portfolis extends Component {
       id: 1,
       front: {
         img: image4,
-        title: "ParkEZ",
+        title: 'ParkEZ',
         content:
-          "ParkEZ allows trucking companies to reserve parking spaces for heavy equipment eg., trucks, trailers, and construction vehicles at a safe location."
+          'ParkEZ allows trucking companies to reserve parking spaces for heavy equipment eg., trucks, trailers, and construction vehicles at a safe location.'
       },
       back: {
         content:
-          "By using this application that same driver can worry less about their equipment and spend more time with their families by quickly booking their spot ahead of their arrival.",
-        Built:
-          "Built with: react.js, JavaScript, MySQL, Sequelize, node.js, express.js, passport.js, rest API, axios, Bootstrap",
-        github: "https://github.com/priyanshkumar/Parking_Lot_Manager",
-        heroku: "https://parking-lot-manage.herokuapp.com/"
+          'By using this application that same driver can worry less about their equipment and spend more time with their families by quickly booking their spot ahead of their arrival.',
+        build:
+          'React.js, JavaScript, MySQL, Sequelize, Node.js, Express.js, Passport.js, rest API, Axios, Bootstrap.',
+        github: 'https://github.com/priyanshkumar/Parking_Lot_Manager',
+        heroku: 'https://parking-lot-manage.herokuapp.com/'
       }
     },
     {
       id: 2,
       front: {
         img: image2,
-        title: "Bargane",
+        title: 'Bargane',
         content:
-          "Bargane is a Market Place app where people can feature their personal belongings for their desired price."
+          'Bargane is a Market Place app where people can feature their personal belongings for their desired price.'
       },
       back: {
-        Built:
-          "Built with: JavaScript, jQuery, Node, Express, Sequelize, MySQL, Ajax, Rest API's, Passport, HTML5, CSS3, Bootstrap.",
+        build:
+          "JavaScript, jQuery, Node.js, Express.js, Sequelize, MySQL, Ajax, Rest API's, Passport.js, HTML5, CSS3, Bootstrap.",
         content:
-          "Bargane gives you list of category for which you can feature you product.",
-        github: "https://github.com/priyanshkumar/Bargane-MarketPlace",
-        heroku: "https://bargane.herokuapp.com/"
+          'Bargane gives you list of category for which you can feature you product.',
+        github: 'https://github.com/priyanshkumar/Bargane-MarketPlace',
+        heroku: 'https://bargane.herokuapp.com/'
       }
     },
     {
       id: 3,
       front: {
         img: image3,
-        title: "Mongo Scrapper",
+        title: 'Mongo Scrapper',
         content:
-          "Mongo Scrape is an app which scrapes articles from the NewYorkTimes web site and displays news items based on the search given by the user."
+          'Mongo Scrape is an app which scrapes articles from the NewYorkTimes web site and displays news items based on the search given by the user.'
       },
       back: {
-        Built:
-          "Built with: HTML5, CSS3, Bootstrap, Node, Express, MongoDB, Handlebars, Cheerio NPM.",
+        build:
+          'JavaScript, HTML5, CSS3, Bootstrap, Node.js, Express.js, MongoDB, Handlebars.js, Cheerio.',
         content:
-          "You can save your choice of scraped sport article and add a note to it for your reference.",
-        github: "https://github.com/priyanshkumar/Bloggit",
-        heroku: "https://priyanshkumar.github.io/Bloggit/login.html"
+          'You can save your choice of scraped sport article and add a note to it for your reference.',
+        github: 'https://github.com/priyanshkumar/Bloggit',
+        heroku: 'https://priyanshkumar.github.io/Bloggit/login.html'
       }
     }
     // {

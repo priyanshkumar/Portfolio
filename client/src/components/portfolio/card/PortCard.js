@@ -1,5 +1,5 @@
-import React from "react";
-import "./PortCard.css";
+import React from 'react';
+import './PortCard.css';
 
 function PortCard({ card }) {
   return (
@@ -22,7 +22,7 @@ function PortCard({ card }) {
           <div className="card-body d-flex flex-column justify-content-center align-items-center">
             <div className="d-flex flex-column align-items-center">
               <p>Would you like to visit?</p>
-              <div>
+              <div className="mb-2">
                 <a
                   rel="noopener noreferrer"
                   href={card.back.heroku}
@@ -52,6 +52,8 @@ function PortCard({ card }) {
                   </ion-icon>
                 </a>
               </div>
+              <p className="m-1">App was build using?</p>
+              <p className="m-0 text-center">{card.back.build}</p>
             </div>
           </div>
         </div>
