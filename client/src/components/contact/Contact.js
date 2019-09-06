@@ -1,16 +1,16 @@
-import React from "react";
-import ReactTimeout from "react-timeout";
-import "./Contact.css";
-import axios from "axios";
+import React from 'react';
+import ReactTimeout from 'react-timeout';
+import './Contact.css';
+import axios from 'axios';
 
 class Contact extends React.Component {
   state = {
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-    error: "",
-    sent: ""
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    error: '',
+    sent: ''
   };
 
   handleChange = event => {
@@ -18,13 +18,13 @@ class Contact extends React.Component {
 
     this.setState({
       [name]: value,
-      error: ""
+      error: ''
     });
   };
 
   handleSubmit = () => {
     axios
-      .post("/api/contact", this.state)
+      .post('/api/contact', this.state)
       .then(response => {
         if (response.data.error) {
           this.setState({
@@ -38,24 +38,24 @@ class Contact extends React.Component {
         if (response.data.sent) {
           this.setState({
             sent: response.data.sent,
-            email: "",
-            name: "",
-            message: "",
-            subject: ""
+            email: '',
+            name: '',
+            message: '',
+            subject: ''
           });
           this.props.setTimeout(() => {
             this.setState({
-              sent: ""
+              sent: ''
             });
           }, 15000);
         }
       })
       .then(() => {
         this.setState({
-          email: "",
-          name: "",
-          message: "",
-          subject: ""
+          email: '',
+          name: '',
+          message: '',
+          subject: ''
         });
       });
   };
@@ -75,10 +75,9 @@ class Contact extends React.Component {
               <div className="row">
                 <div className="col-12 d-flex justify-content-center align-items-center mt-4 my-lg-4">
                   <ul className="contact-details text-center p-0">
-                    <li>28 Fandor Way</li>
                     <li>Brampton, Canada</li>
                     <li>+1 (705) 7337875</li>
-                    <li>pradadiya667@gmail.com</li>
+                    <li>radadiyapriyansh@gmail.com</li>
                   </ul>
                 </div>
               </div>

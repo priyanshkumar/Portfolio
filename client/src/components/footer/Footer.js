@@ -64,7 +64,7 @@ function Footer() {
           </div>
           <div className="row">
             <div className="col-12">
-              <p className="lead lead-2 m-0">Designed by PR</p>
+              <p className="lead-2 m-0">Designed by PR</p>
             </div>
           </div>
         </div>
