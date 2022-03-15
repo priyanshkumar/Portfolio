@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run start:prod",
+    "start": "npm run start:dev",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
@@ -20,13 +20,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^4.1.1",
-    "nodemon": "^1.18.7"
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "googleapis": "^42.0.0",
+    "googleapis": "^97.0.0",
     "nodemailer": "^6.3.0",
     "react-timeout": "^1.2.0",
     "xoauth2": "^1.2.0"
